@@ -1,0 +1,210 @@
+.footer{
+    &__info{
+        width: 540px;
+        &-title{
+            cursor: pointer;
+            color: $title;
+            margin-bottom: 14px;
+            line-height: 23px;
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+        &-text{
+            margin-bottom: 16px;
+            max-width: 475px;
+            cursor: pointer;
+        }
+.info-email{
+    font-weight: 600;
+    font-size: 14px;
+    color: $title;
+    margin-bottom: 22px;
+    display: inline-block;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+    &::before{
+        content: "";
+        background-image: url(../images/envelope.svg);
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 16px;
+        height: 12px;
+        
+    }
+}
+    }
+    &__form{
+        display: flex;
+        &-input{
+            padding: 6px 10px 6px 18px;
+            border-radius: 21px;
+            background-color: transparent;
+            opacity: 0.7;
+            border: 1px solid rgba($title, .7);
+            width: 100%;
+            &::placeholder{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 28px;
+                color: #A1A1A1;
+            }
+        }
+        &-button{
+            background-color: $title;
+            border: none;
+            color: #FFFFF0;
+            border-radius: 21px;
+            font-weight: 600;
+            padding: 6px 12px;
+            min-width: 160px;
+            margin-left: 9px;
+            cursor: pointer;
+        }
+    }
+    &__social{
+        width: 125px;
+        margin-right: auto;
+        margin-left: 99px;
+        list-style-type: none;
+        &-link{
+            padding-left: 28px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                top: 3px;
+            }
+            &--Facebook::before{
+                background-image: url(../images/facebook.svg);
+                background-repeat: no-repeat;
+            }
+            &--Instagram::before{
+                background-image: url(../images/instagram.svg);
+                background-repeat: no-repeat;
+                top: 4px;
+                width: 14px;
+                height: 14px;
+
+            }
+            &--Pinterest::before{
+                background-image: url(../images/Pinterest.svg);
+                background-repeat: no-repeat;
+                
+            }
+            &--WhatsApp::before{
+                background-image: url(../images/whatsapp.svg);
+                background-repeat: no-repeat;
+                width: 14px;
+                height: 14px;
+            }
+            &--Youtube::before{
+                background-image: url(../images/youtube.svg);
+                background-repeat: no-repeat;
+                width: 18px;
+                height: 12px;
+                top: 4px;
+            }
+        }
+        &-item{
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #707070;
+        }
+    }
+    &__menu{
+        margin-right: 60px;
+        width: 125px;
+        &-item{
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #707070;
+        }
+        
+        &-list{
+            list-style-type: none;   
+        }
+    }
+    &__content{
+        background: #DFDFDF;
+        padding: 60px 0 80px;
+        
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__copyright{
+        cursor: pointer;
+        background:$title;
+        color: #A1A1A1;
+        text-align: center;
+        padding: 42px 0 41px;
+
+    }
+}
+
+@media (max-width: 1220px){
+    .footer{
+        &__info{
+            width: 380px;
+        }
+    }
+}
+
+@media (max-width: 868px){
+    .footer{
+        &__inner{
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        &__info{
+            width: 100%;
+            margin-bottom: 50px;
+            &-text{
+                max-width: 100%;
+
+            }
+        }
+        &__menu{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__social{
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    }
+}
+
+@media (max-width: 436px){
+    .footer{
+        &__inner{
+            justify-content: space-between;
+
+        }
+        &__social{
+            margin-left: 0;
+
+        }
+        &__form{
+            display: block;
+            &-button{
+                width: 100%;
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}

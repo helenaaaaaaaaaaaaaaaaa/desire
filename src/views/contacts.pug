@@ -1,0 +1,145 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+		menu_item_4_additional_classes="menu__list-item--active"
+
+
+
+
+block main
+	.breadcrumbs
+		.container 
+			ul.breadcrumbs__list 
+				li.breadcrumbs__item
+					a.breadcrumbs__link Home
+				li.breadcrumbs__item
+					a.breadcrumbs__link Contact
+	.map 
+		iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.613062337675!2d-122.41449268445234!3d37.799106879754966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580e839d7e541%3A0xf89b6220c55337a7!2zR3JlZW4gU3QsIFNhbiBGcmFuY2lzY28sIENBIDk0MTMzLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1648325043150!5m2!1sru!2sru" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+	section.contact 
+		.container 
+			h3.contact__title Contact Us
+			ul.contact__social
+				li.contact__social-item
+					a.contact__social-link(href="")
+						img.contact__social-link(src="images/facebook.svg") 
+				li.contact__social-item
+					a.contact__social-link(href="")
+						img.contact__social-link(src="images/instagram.svg") 
+				li.contact__social-item
+					a.contact__social-link(href="")
+						img.contact__social-link(src="images/Pinterest.svg") 
+				li.contact__social-item
+					a.contact__social-link(href="")
+						img.contact__social-link(src="images/whatsapp.svg") 
+				li.contact__social-item
+					a.contact__social-link(href="")
+						img.contact__social-link(src="images/youtube.svg") 
+			.contact__box
+				p.contact__text Vexillologist vape microdosing freegan pork belly deep v direct trade cray single-origin coffee street art. Viral shaman mustache master cleanse, pour-over affogato poutine copper mug marfa fanny pack normcore. Lo-fi pop-up banjo portland, echo park hammock
+				a.contact__phone(href="tel:+14158297934") (415) 829-7934
+				.contact__str 725 Green St
+				.contact__city San Francisco, California(CA), 94133
+				a.info-email ouremailaddress@email.com
+			form.contact__form
+				input.contact__form-input(type="text" placeholder="Your name")
+				input.contact__form-input(type="email" placeholder="Your e-mail")
+				textarea.contact__form-area(placeholder="Your message")
+				button.contact__form-btn(type="submit") Send
+	.container-fluid
+		.contact-slider 
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/1.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/2.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/3.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/4.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/5.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/6.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/7.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/8.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/9.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/10.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/1.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/2.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/3.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/4.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/5.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/6.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/7.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/8.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/9.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/10.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/1.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/2.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/3.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/4.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/5.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/6.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/7.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/8.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/9.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+			a.contact-slider__link(href="")
+				img.contact-slider__img(src="images/slider/10.jpg", alt="")
+				p.contact-slider__title Truffaut literally trust
+		

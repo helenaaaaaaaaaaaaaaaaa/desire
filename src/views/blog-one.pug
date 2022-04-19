@@ -1,0 +1,81 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+		var menu_item_3_additional_classes = "menu__list-item--active"
+
+
+
+
+block main
+	.breadcrumbs
+		.container 
+			ul.breadcrumbs__list 
+				li.breadcrumbs__item
+					a.breadcrumbs__link Home
+				li.breadcrumbs__item
+					a.breadcrumbs__link Blog
+	section.blog
+		.container 
+			.blog__inner
+				.blog__items 
+				aside.aside
+					form.aside__search
+						input.aside__search-input(type="text", placeholder="Search")
+						button.aside__search-btn(type="submit")
+							img(src="images/search-icon.svg", alt="")
+					.blog__category
+						h6.blog__category-title Categories
+						ul.blog__category-list 
+							li.blog__category-item
+								a.blog__category-link Dining room (1)
+							li.blog__category-item
+								a.blog__category-link Office furniture (12)
+							li.blog__category-item
+								a.blog__category-link Simple interiror design (2)
+							li.blog__category-item
+								a.blog__category-link Design (4)
+							li.blog__category-item
+								a.blog__category-link Bedroom Furniture (1)
+					.recent-posts 
+						h6.recent-posts__title Recent Posts
+						ul.recent-posts__list 
+							li.recent-posts__item
+								a.recent-post__item-title Cred selfies edison bulb four dollar toast humblebrag
+								span.recent-post__date August 10, 2020 | 
+								a.recent-post__author by Ann Summers
+							li.recent-posts__item
+								a.recent-post__item-title Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth
+								span.recent-post__date September 30 ,2020 | 
+								a.recent-post__author by Ann Summers
+							li.recent-posts__item
+								a.recent-post__item-title Cred selfies edison bulb four dollar toast humblebrag
+								span.recent-post__date May 2, 2020 | 
+								a.recent-post__author by Ann Summers
+					.blog__tags 
+						h6.blog__tags-title Tags
+						a.blog__tag-link(href="") Dining room futniture 
+						a.blog__tag-link(href="") Chair
+						a.blog__tag-link(href="") Table
+						a.blog__tag-link(href="") Bedroom
+						a.blog__tag-link(href="") Office Furniture
+					 
+					ul.blog__social
+						li.blog__social-item
+							a.blog__social-link(href="")
+								img.blog__social-link(src="images/facebook.svg") 
+						li.blog__social-item
+							a.blog__social-link(href="")
+								img.blog__social-link(src="images/instagram.svg") 
+						li.blog__social-item
+							a.blog__social-link(href="")
+								img.blog__social-link(src="images/Pinterest.svg") 
+						li.blog__social-item
+							a.blog__social-link(href="")
+								img.blog__social-link(src="images/whatsapp.svg") 
+						li.blog__social-item
+							a.blog__social-link(href="")
+								img.blog__social-link(src="images/youtube.svg")

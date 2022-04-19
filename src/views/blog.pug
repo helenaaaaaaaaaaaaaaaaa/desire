@@ -1,0 +1,114 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+		var menu_item_3_additional_classes = "menu__list-item--active"
+
+
+
+
+block main
+	.breadcrumbs
+		.container 
+			ul.breadcrumbs__list 
+				li.breadcrumbs__item
+					a.breadcrumbs__link Home
+				li.breadcrumbs__item
+					a.breadcrumbs__link Blog
+	section.blog
+		.container 
+			.blog__inner
+				.blog__items 
+					.blog__item
+						img.blog__item-img(src="images/blog/big-1.jpg", alt="")
+						.blog__item-info 
+							span.blog__item-date August 15, 2020 | 
+							a.blog__item-author by Ann Summers | 
+							a.blog__item-theme Bedroom Furniture
+						h3.blog__item-title Red selfies edison bulb four dollar toast humblebrag for the furniture
+						p.blog__item-text Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table
+					blockquote.blog__blockquote “Simplicity is not the goal. It is the by-product of a good idea and modest expectations” 
+						.blog__blockquote-author Paul Rand
+					.blog__item.article-popup
+						.article-popup__box
+							img.blog__item-img(src="images/blog/big-2.jpg", alt="")
+							a.blog__item-popup(data-fancybox href="https://youtu.be/ox43Z8iqwks")
+								img.blog__item-play(src="images/play_button.svg", alt="")
+						.blog__item-info 
+							span.blog__item-date August 12, 2020 | 
+							a.blog__item-author by Lux Morningstar | 
+							a.blog__item-theme Design
+						h3.blog__item-title Authentic kogi shabby chic
+					
+					
+					//*.pagination
+						
+						a.pagination__arrow.pagination__arrow--disabled(href="") 
+							img.pagination__arrow-icon(src="images/arrow-left.svg", alt="")
+						ul.pagination__list
+							li.pagination__list-item 
+								a.pagination__list-num.pagination__list-num--active 1
+							li.pagination__list-item 
+								a.pagination__list-num 2
+						a.pagination__arrow(href="") 
+								img.pagination__arrow-icon(src="images/arrow-right.svg", alt="")*\\
+				aside.aside
+					form.aside__search
+						input.aside__search-input(type="text", placeholder="Search")
+						button.aside__search-btn(type="submit")
+							img(src="images/search-icon.svg", alt="")
+					.blog__category
+						h6.blog__category-title Categories
+						ul.blog__category-list 
+							li.blog__category-item
+								a.blog__category-link Dining room (1)
+							li.blog__category-item
+								a.blog__category-link Office furniture (12)
+							li.blog__category-item
+								a.blog__category-link Simple interiror design (2)
+							li.blog__category-item
+								a.blog__category-link Design (4)
+							li.blog__category-item
+								a.blog__category-link Bedroom Furniture (1)
+					.recent-posts 
+						h6.recent-posts__title Recent Posts
+						ul.recent-posts__list 
+							li.recent-posts__item
+								a.recent-post__item-title Cred selfies edison bulb four dollar toast humblebrag
+								span.recent-post__date August 10, 2020 | 
+								a.recent-post__author by Ann Summers
+							li.recent-posts__item
+								a.recent-post__item-title Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth
+								span.recent-post__date September 30 ,2020 | 
+								a.recent-post__author by Ann Summers
+							li.recent-posts__item
+								a.recent-post__item-title Cred selfies edison bulb four dollar toast humblebrag
+								span.recent-post__date May 2, 2020 | 
+								a.recent-post__author by Ann Summers
+					.blog__tags 
+						h6.blog__tags-title Tags
+						a.blog__tag-link(href="") Dining room futniture 
+						a.blog__tag-link(href="") Chair
+						a.blog__tag-link(href="") Table
+						a.blog__tag-link(href="") Bedroom
+						a.blog__tag-link(href="") Office Furniture
+					 
+					ul.blog__social
+						li.blog__social-item
+							a.blog__social-link(href="")
+								img.blog__social-link(src="images/facebook.svg") 
+						li.blog__social-item
+							a.blog__social-link(href="")
+								img.blog__social-link(src="images/instagram.svg") 
+						li.blog__social-item
+							a.blog__social-link(href="")
+								img.blog__social-link(src="images/Pinterest.svg") 
+						li.blog__social-item
+							a.blog__social-link(href="")
+								img.blog__social-link(src="images/whatsapp.svg") 
+						li.blog__social-item
+							a.blog__social-link(href="")
+								img.blog__social-link(src="images/youtube.svg")

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/style/partials/main-adaptive.scss"
+    ],
+    "names": [],
+    "file": "main-adaptive.css"
+}

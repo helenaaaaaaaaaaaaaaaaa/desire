@@ -1,0 +1,134 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+		menu_item_2_additional_classes="menu__list-item--active"
+
+
+
+
+block main
+	.breadcrumbs
+		.container 
+			ul.breadcrumbs__list 
+				li.breadcrumbs__item
+					a.breadcrumbs__link Home
+				li.breadcrumbs__item
+					a.breadcrumbs__link Gallery
+	.gallery.gallery-page 
+		.container-fluid
+			.gallery__buttons 
+				button.gallery__btn(data-filter=".bedroom") Bedroom furniture
+				button.gallery__btn(data-filter=".living") Living room furniture
+				button.gallery__btn(data-filter=".office") Office furniture
+				button.gallery__btn(data-filter=".dining") Dining room futniture
+				button.gallery__btn(data-filter=".chair") Chair
+			.gallery__inner
+				.gallery__items.mix.bedroom 
+					a.gallery__item
+						img(src="images/gallery/1.jpg")
+					a.gallery__item
+						img(src="images/gallery/2.jpg")
+					a.gallery__item
+						img(src="images/gallery/3.jpg")
+					a.gallery__item
+						img(src="images/gallery/4.jpg")
+					a.gallery__item
+						img(src="images/gallery/5.jpg")
+					a.gallery__item
+						img(src="images/gallery/1.jpg")
+					a.gallery__item
+						img(src="images/gallery/2.jpg")
+					a.gallery__item
+						img(src="images/gallery/3.jpg")
+					a.gallery__item
+						img(src="images/gallery/4.jpg")
+					a.gallery__item
+						img(src="images/gallery/5.jpg")
+				.gallery__items.mix.living 
+					a.gallery__item
+						img(src="images/gallery/5.jpg")
+					a.gallery__item
+						img(src="images/gallery/4.jpg")
+					a.gallery__item
+						img(src="images/gallery/3.jpg")
+					a.gallery__item
+						img(src="images/gallery/2.jpg")
+					a.gallery__item
+						img(src="images/gallery/1.jpg")
+					a.gallery__item
+						img(src="images/gallery/5.jpg")
+					a.gallery__item
+						img(src="images/gallery/4.jpg")
+					a.gallery__item
+						img(src="images/gallery/3.jpg")
+					a.gallery__item
+						img(src="images/gallery/2.jpg")
+					a.gallery__item
+						img(src="images/gallery/1.jpg")
+				.gallery__items.mix.office 
+					a.gallery__item
+						img(src="images/gallery/4.jpg")
+					a.gallery__item
+						img(src="images/gallery/2.jpg")
+					a.gallery__item
+						img(src="images/gallery/1.jpg")
+					a.gallery__item
+						img(src="images/gallery/5.jpg")
+					a.gallery__item
+						img(src="images/gallery/3.jpg")
+					a.gallery__item
+						img(src="images/gallery/4.jpg")
+					a.gallery__item
+						img(src="images/gallery/2.jpg")
+					a.gallery__item
+						img(src="images/gallery/1.jpg")
+					a.gallery__item
+						img(src="images/gallery/5.jpg")
+					a.gallery__item
+						img(src="images/gallery/3.jpg")
+				.gallery__items.mix.dining 
+					a.gallery__item
+						img(src="images/gallery/3.jpg")
+					a.gallery__item
+						img(src="images/gallery/1.jpg")
+					a.gallery__item
+						img(src="images/gallery/4.jpg")
+					a.gallery__item
+						img(src="images/gallery/5.jpg")
+					a.gallery__item
+						img(src="images/gallery/2.jpg")
+					a.gallery__item
+						img(src="images/gallery/3.jpg")
+					a.gallery__item
+						img(src="images/gallery/1.jpg")
+					a.gallery__item
+						img(src="images/gallery/4.jpg")
+					a.gallery__item
+						img(src="images/gallery/5.jpg")
+					a.gallery__item
+						img(src="images/gallery/2.jpg")
+				.gallery__items.mix.chair 
+					a.gallery__item
+						img(src="images/gallery/1.jpg")
+					a.gallery__item
+						img(src="images/gallery/2.jpg")
+					a.gallery__item
+						img(src="images/gallery/3.jpg")
+					a.gallery__item
+						img(src="images/gallery/4.jpg")
+					a.gallery__item
+						img(src="images/gallery/5.jpg")
+					a.gallery__item
+						img(src="images/gallery/1.jpg")
+					a.gallery__item
+						img(src="images/gallery/2.jpg")
+					a.gallery__item
+						img(src="images/gallery/3.jpg")
+					a.gallery__item
+						img(src="images/gallery/4.jpg")
+					a.gallery__item
+						img(src="images/gallery/5.jpg")

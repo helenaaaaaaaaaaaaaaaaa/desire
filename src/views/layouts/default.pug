@@ -1,6 +1,14 @@
 doctype html
 
+- 
+	var menu_item_1_additional_classes = ''
+	var menu_item_2_additional_classes = ''
+	var menu_item_3_additional_classes = ''
+	var menu_item_4_additional_classes = ''
+	
+
 block vars
+
 include ../components/_mixins
 
 html(lang="ru")
@@ -12,6 +20,7 @@ html(lang="ru")
 		meta(property="og:image" content="images/logo.svg")
 		meta(name="format-detection" content="telephone=no")
 		link(href="css/main.css" rel="stylesheet")
+		|  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
 		//title= `${page.title}`
 
