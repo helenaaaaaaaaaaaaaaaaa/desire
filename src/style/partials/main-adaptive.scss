@@ -269,4 +269,9 @@
     .slick-dots li{
         margin: 0 5px;
     }
+    .inspiration__item{
+        &::marker{
+            display: none;
+        }
+    }
 }
