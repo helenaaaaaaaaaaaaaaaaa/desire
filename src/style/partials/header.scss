@@ -117,14 +117,12 @@
 	}
 }
 
-.rightside-menu{
-	
+.rightside-menu{	
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	top: 0;
 	max-width: 694px;
-	width: 100%;
 	background-color: #fff;
 	padding-top: 40px;
 	z-index: 100;
@@ -231,6 +229,9 @@
 				}
 			}
 		}
+	}
+	.rightside-menu{
+		display: none;
 	}
 	.menu{
 		
