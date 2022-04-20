@@ -166,6 +166,12 @@
     .blog__blockquote{
         padding: 21px 28px;
     }
+    .inspiration__item{
+        list-style: none;
+        &::marker{
+            display: none;
+        }
+    }
     
     
     
@@ -270,6 +276,7 @@
         margin: 0 5px;
     }
     .inspiration__item{
+        list-style: none;
         &::marker{
             display: none;
         }
